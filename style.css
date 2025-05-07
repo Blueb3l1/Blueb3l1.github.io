@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Hepta+Slab:wght@1..900&display=swap');
+
+/* body , html , and main customization */
+body{
+	font-family: "Cagliostro", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+body, html {
+			/* fits the page to whole screen */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: ghostwhite;
+}
+main{
+	max-width: 1300px;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* nav customization (finished) */ 
+nav{
+    text-align: center;
+    line-height: 200%;
+    background-color: #0D1A2C;
+  }
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+nav li{
+  display: inline;
+  padding: 10px;
+}
+nav a{
+	text-decoration: none !important;
+	font-size: 20px;
+	font-weight: bold;
+	color: whitesmoke;
+}
+nav a:link{
+	color: whitesmoke;
+}
+nav a:visited{
+	color: orange;
+}
+nav a:hover{
+	color: pink;
+}
+nav a:active{
+	color: lightblue;
+}
+.nav-gif{
+	background-color: #FFDF9A;
+	border-radius: 5px;
+}
+
+/* a-button customization (finished) */
+a.a-button{
+	color: white;
+	margin: 4px 2px;
+	padding: 10px 10px;
+	border-radius: 4px;
+	font-weight: bold;
+
+	display: inline-block; /* fits background to text */
+	text-decoration: none !important; /* removes underline */
+}
+a.a-button:link{
+	background-color: #276591
+}
+a.a-button:hover{
+	background-color: pink;
+}
+#a-button{
+	text-align: center;
+}
+
+													/*  home section */
+/* iogo customization */
+header img{
+	text-align: center;
+	margin-bottom: 10px;
+}
+header{
+	background-color: #15395D;
+	max-width: 100%;
+}
+#logo{
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 0; 
+}
+
+/* home-hero and welcome customization */
+.home-hero{
+	background-image: url(images/home-hero.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+  height: 400px; /* vertical length */
+  width: 100%; 
+  			/* background color */
+  background-color: black;			
+}
+.welcome{
+	color: whitesmoke;
+	text-align: center;
+	padding-top: 150px;
+				/* font size */
+	font-size: 60px;
+	font-weight: bold;
+}
+
+/* home image */
+.thumbs-up{
+	float: right;
+	max-width: 45%;
+	margin-bottom: 20px;
+	margin-right: 15%;
+	border-radius: 10px;
+	box-shadow: 4px 4px 4px black;
+}
+#thumbs-up{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding: 20px;
+}
+.future-p{
+	text-align: center;
+}
+
+/* footer customization */
+footer{
+    color: whitesmoke;
+    text-align: center;
+    min-height: 75px;
+    width: 100%;
+    padding: 10px;
+
+    background-color: #15395D;
+    display: flex;
+    flex-direction: column; /* Keeps content stacked properly */
+    align-items: center; /* Centers everything */
+}
+.footer-bottom{ /* fix width to fit bottom screen */
+	text-align: center;
+	padding: 10px; /* Gives some breathing room */
+	background-color: #222; /* Dark background */
+
+}
+
+/* bootstrap custom */
+.container-fluid, .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+.col-sm-6{
+	padding: 15px;
+	background-color: #15395D;
+}
+.col-sm-4{
+	flex: 1;
+	padding: 10px;
+	text-align: center;
+	min-width: 300px;
+}
+.fa{
+	display: inline-block;
+	margin: 10px;
+}
+
+/*text customization */
+.h-indent{
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+p{
+	margin: 2.5%;
+	font-size: 20px;
+}
+
+/* resume section */
+.body-custom{
+	margin: 40px auto; /*side indents for resume section */
+	max-width: 900px;
+				/* border customization */
+	border: solid #E7EEF1;
+	padding: 20px;
+	background-color: white;
+}
+
+/* contact section - finished */ 
+.contact-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0;
+}
+iframe{
+	background-color: white;
+	border: solid #E7EEF1;
+	margin-bottom: 20px;
+			/* float left section */
+	float: left;
+
+}
+.iframe-container{
+	order: -1; /* without order, its placement gets swapped */
+			/* margin spacing */
+	margin: auto;		
+}
+.comm-bubble{
+	  background-color: #FFDF9A;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 300px; /* Keeps it neatly sized */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    		/* spacing between */
+    margin: auto;	
+    margin-top: -1px;
+    margin-left: -10px;
+}
+
+/* Gallery or portfolio section */
+.port-p{
+	text-align: center;
+}
+
+/* image fluid customization - portfolio */
+.img-fluid{
+    display: block; /* Prevents inline spacing issues */
+    margin: 10px auto; /* Adds space around images */
+    max-width: 100%;
+}
+
+/* gallery-img - gallery */
+.gallery-img{
+	padding: 5px;
+	margin: 15px;
+}
